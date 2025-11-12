@@ -15,9 +15,9 @@ export async function clientLoader() {
 }
 
 export default function Tutors({loaderData}) {
-  const tutors = loaderData;
+  const tutors: Tutor[] = loaderData;
 
-  return <>
+  return <div style={{p:9}}>
     <b>Heute aktive Lehrkräfte</b>
 
     <ul>
@@ -31,5 +31,5 @@ export default function Tutors({loaderData}) {
     <br />
     <p>Details (&lt;Outlet&gt;):</p>
     <Outlet />
-  </>;
+  </div>;
 }

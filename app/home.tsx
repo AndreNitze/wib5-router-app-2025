@@ -1,4 +1,3 @@
-import type { Route } from "../.react-router/types/app/routes/+types";
 import { Welcome } from "./welcome/welcome";
 import React from "react";
 
